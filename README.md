@@ -37,6 +37,7 @@ model Employee {
 ```
 ---
 
+### Prisma Create() - Insert Single Record
 ![](https://imgur.com/SFPsFff.png)
 
 ```bash

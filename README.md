@@ -1,5 +1,42 @@
 ## NextJS-API-Insert-Operation
 
+#### prisma.schema
+```bash
+generator client {
+  provider = "prisma-client-js"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id    String     @id @default(uuid())
+  email String  @unique
+  name  String?
+  posts Post[]
+}
+
+model Post {
+  id        String     @id @default(uuid())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  authorId  String
+  author    User    @relation(fields: [authorId], references: [id])
+}
+
+model Employee {
+  id          String @id @default(uuid())
+  name        String
+  designation String
+  city        String
+  salary      Int
+}
+```
+---
+
 ![](https://imgur.com/SFPsFff.png)
 
 ```bash

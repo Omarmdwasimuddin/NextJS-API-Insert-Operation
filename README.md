@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
 ```
 ---
 
-### heading...
+### Prisma CreateMany() - Bulk Insert Records
 ![](https://imgur.com/EUaBar8.png)
 
 ```bash

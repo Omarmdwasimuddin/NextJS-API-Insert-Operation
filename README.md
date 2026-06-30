@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
 ```
 ---
 
-### Prisma CreateMany() - Bulk Insert Records
+### NextJS API - Insert Multiple Records
 ![](https://imgur.com/EUaBar8.png)
 
 ```bash
